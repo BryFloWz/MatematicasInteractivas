@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas Interactivas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>📘 MATEMÁTICAS INTERACTIVAS</h1>
+        <p>¡Explora, juega y domina las matemáticas mientras te diviertes!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><button data-section="inicio">Inicio</button></li>
+            <li><button data-section="conceptos">Conceptos</button></li>
+            <li><button data-section="juego">Juego</button></li>
+            <li><button data-section="videos">Videos</button></li>
+            <li><button data-section="contacto">Contacto</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="inicio" class="section active">
+            <CENTER><h1>🚀 Bienvenido</h1></CENTER>
+            <CENTER><p>Comienza tu aventura matemática con actividades interactivas diseñadas para ti.</p></CENTER>
+            <button class="next-btn" data-next="conceptos">Ir a Conceptos</button>
+        </section>
+
+        <section id="conceptos" class="section">
+            <h2>📚 Conceptos Matemáticos</h2>
+            <p>Aprende los fundamentos de:</p>
+            <ul>
+                <li><b>Suma:</b> Combina números para obtener un total.</li>
+                <li><b>Resta:</b> Calcula la diferencia entre números.</li>
+                <li><b>Multiplicación:</b> Multiplica números fácilmente.</li>
+                <li><b>División:</b> Divide números en partes iguales.</li>
+                <li><b>Porcentaje:</b> Calcula un porcentaje de un número.</li>
+                <li><b>Gauss-Jordan:</b> Resuelve sistemas de ecuaciones lineales utilizando matrices. <br> Método paso a paso para encontrar soluciones de sistemas de ecuaciones.</li>
+                <li><b>Sustitución:</b> Resuelve ecuaciones lineales sustituyendo una variable por otra. <br> Una técnica simple para resolver sistemas de ecuaciones.</li>
+            </ul>
+            <button class="prev-btn" data-prev="inicio">Regresar</button>
+            <button class="next-btn" data-next="juego">Ir al Juego</button>
+        </section>        
+        <section id="juego" class="section">
+            <h2>🎮 Juego Matemático</h2>
+            <div id="game-container">
+                <div class="game-card">
+                    <div id="exercise"></div>
+                    <input type="number" id="answer" placeholder="Escribe tu respuesta">
+                    <button id="check-btn">Comprobar</button>
+                </div>
+                <p id="feedback"></p>
+                <div id="score-container">
+                    <p>Puntaje: <span id="score">0</span></p>
+                </div>
+                <div id="character">
+                    <span id="character-emoji" style="font-size: 4rem;">😊</span>
+                </div>
+                <div>
+                    <button id="change-operation">Cambiar Operación</button>
+                </div>                
+            </div>
+            <button class="prev-btn" data-prev="conceptos">Regresar</button>
+            <button class="next-btn" data-next="videos">Ver Videos</button>
+        </section>
+        <section id="videos" class="section">
+            <h2>🎥 Videos Educativos</h2>
+            <div class="video-container">
+                <!-- Video 1 -->
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/4pB_ki1EmNc" 
+                    title="Video 1" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+        
+                <!-- Video 2 -->
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/5bZ1j6wom-0" 
+                    title="Video 2" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+        
+                <!-- Video 3 -->
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/bNZ_7qzgPrI" 
+                    title="Video 3" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+        
+                <!-- Video 4 -->
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/8Vx3KQj7bd0" 
+                    title="Video 4" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+        
+                <!-- Video 5 -->
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/iMCkKatIAw8" 
+                    title="Video 5" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+        
+                <!-- Video 6 -->
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/tute4KYTiUM" 
+                    title="Video 6" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <button class="prev-btn" data-prev="juego">Regresar</button>
+            <button class="next-btn" data-next="contacto">Ir a Contacto</button>
+        </section>        
+        <section id="contacto" class="section">
+            <h2>✉️ Contáctanos</h2>
+<form id="contact-form">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message" required></textarea>
+    <button type="submit">Enviar</button>
+</form>
+
+<!-- Contenedor para los comentarios -->
+<div id="comments-section">
+    <h3>📋 Mensajes Recibidos:</h3>
+    <ul id="comments-list"></ul>
+</div>
+            <button class="prev-btn" data-prev="videos">Regresar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Unidad Educativa Ismael Pérez Pazmiño © 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
